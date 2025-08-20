@@ -1,0 +1,9 @@
+<h2>Answer 6</h2>
+<form (ngSubmit)="addEmployee()">
+  <label>Code: <input [(ngModel)]="code" name="code"></label><br>
+  <label>Name: <input [(ngModel)]="name" name="name"></label><br>
+  <label>Gender: <input [(ngModel)]="gender" name="gender"></label><br>
+  <label>Salary: <input type="number" [(ngModel)]="salary" name="salary"></label><br>
+  <label>Date of Birth: <input type="date" [(ngModel)]="dob" name="dob"></label><br>
+  <button type="submit">Add Employee</button>
+</form>

@@ -1,0 +1,17 @@
+<h2>Answer 4</h2>
+<table border="1" cellpadding="5">
+  <tr>
+    <th>Code</th>
+    <th>Name</th>
+    <th>Gender</th>
+    <th>Salary</th>
+    <th>Date of Birth</th>
+  </tr>
+  <tr *ngFor="let emp of employees">
+    <td>{{ emp.code | uppercase }}</td>
+    <td>{{ emp.name }}</td>
+    <td>{{ emp.gender }}</td>
+    <td>₹ {{emp.annualSalary}}</td>
+    <td>{{emp.dateOfBirth | date:'fullDate'}}</td>
+  </tr>
+</table>
